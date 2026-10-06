@@ -1,0 +1,17 @@
+# Infrastructure for the briefs on this rung. The scaffold itself uses NONE of
+# these — wiring one in is the work. Start what your brief needs:
+#
+#   docker compose up -d memcached     # or postgres, or both
+services:
+  memcached:
+    image: memcached:1.6-alpine
+    ports:
+      - "11211:11211"
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+      POSTGRES_DB: app
+    ports:
+      - "5432:5432"

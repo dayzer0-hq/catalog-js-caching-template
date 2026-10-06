@@ -1,0 +1,14 @@
+{
+  "name": "catalog-js-caching-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DayZer0 caching-rung starter: an Express API that is slow on purpose",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
